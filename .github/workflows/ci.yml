@@ -31,6 +31,4 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: pip install mkdocs-material 
-      - name: Deploy MkDocs
-        run: mkdocs gh-deploy --force
-        working-directory: ./
+      - run: mkdocs gh-deploy --force
