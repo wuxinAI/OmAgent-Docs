@@ -4,9 +4,9 @@ API结构模板：列出所有模块 --> 列出该模块下所有子模块，再
 
 ## omagent-core.core
 
-- Introduction:
-- Class hierarchy:
-- Main helpers:
+- Introduction
+- Class hierarchy
+- Main helpers
 
 ### Classes
 
