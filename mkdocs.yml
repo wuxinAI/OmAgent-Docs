@@ -1,0 +1,28 @@
+site_name: Project 0
+# site_url: https://mydocs.org/landing-page
+theme:
+  name: material # theme docs: https://squidfunk.github.io/mkdocs-material/
+  features:
+    # - navigation.instant
+    # - navigation.instant.prefetch # 快速预览，目前还只是测试功能
+    - navigation.tabs
+    - navigation.sections
+    - navigation.path
+    - navigation.top # Add a back-to-top button
+    - search.highlight
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - tables
+
+plugins:
+  - search
+
+nav: # Navigation Headers
+  - Home: index.md
+  - API: API Reference.md
+
+# 链接到外部仓库
+repo_url: https://github.com/om-ai-lab/OmAgent
+repo_name: om-ai-lab/OmAgent
