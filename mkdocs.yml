@@ -1,10 +1,19 @@
 site_name: Project 0
 # site_url: https://mydocs.org/landing-page
+
+# nav: # Navigation Headers
+#   - Home: "index.md"
+#   - Conceptual Guide:
+#       - Architecture: "docs/Conceptual Guide/Conceptual Guide.md"
+#       - Components: "docs/Conceptual Guide/Components.md"
+#   - API: "API Reference.md"
+
 theme:
   name: material # theme docs: https://squidfunk.github.io/mkdocs-material/
   features:
     # - navigation.instant
     # - navigation.instant.prefetch # 快速预览，目前还只是测试功能
+    - navigation.tracking
     - navigation.tabs
     - navigation.sections
     - navigation.path
@@ -15,13 +24,15 @@ theme:
 
 markdown_extensions:
   - tables
+  - def_list # Enable the use of definition lists
+  - pymdownx.tasklist: # Enable the use of task lists
+      custom_checkbox: true
+  - attr_list # adds the ability to align images, add captions to images, and mark large images for lazy-loading
+  - md_in_html
 
 plugins:
   - search
-
-nav: # Navigation Headers
-  - Home: index.md
-  - API: API Reference.md
+  - glightbox
 
 # 链接到外部仓库
 repo_url: https://github.com/om-ai-lab/OmAgent
