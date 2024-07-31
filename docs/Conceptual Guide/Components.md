@@ -2,39 +2,8 @@
 
 > **Version**: [0.0.2]
 **Date**: [2024/7/31]
-> 
 
 ---
-
-<aside>
-💡  TABLE OF CONTENTS
-
-- [Architecture](https://www.notion.so/Conceptual-Guide-86fe1a534e114c928acaec82c2a2e5c1?pvs=21)
-    
-    
-- [Components](https://www.notion.so/Components-1bc2f531b75148a18920c5d26f60d855?pvs=21)
-    - [Encoder](https://www.notion.so/Components-1bc2f531b75148a18920c5d26f60d855?pvs=21)
-        
-        
-    - [Chat Models](https://www.notion.so/Components-1bc2f531b75148a18920c5d26f60d855?pvs=21)
-        
-        
-    - [Node](https://www.notion.so/Components-1bc2f531b75148a18920c5d26f60d855?pvs=21)
-        
-        
-    - [Prompt templates](https://www.notion.so/Components-1bc2f531b75148a18920c5d26f60d855?pvs=21)
-        
-        
-    - [Tool system](https://www.notion.so/Components-1bc2f531b75148a18920c5d26f60d855?pvs=21)
-        
-        
-    - [Handlers](https://www.notion.so/Components-1bc2f531b75148a18920c5d26f60d855?pvs=21)
-        
-        
-    - [Schemas](https://www.notion.so/Components-1bc2f531b75148a18920c5d26f60d855?pvs=21)
-    - [Utils](https://www.notion.so/Components-1bc2f531b75148a18920c5d26f60d855?pvs=21)
-
-</aside>
 
 OmAgent offers standard, extendable interfaces and external integrations for building with LLMs. It implements some components, relies on third-party integrations for others, and uses a mix for the rest.
 
@@ -44,7 +13,7 @@ OmAgent offers standard, extendable interfaces and external integrations for bui
 
 Embedding models can transform text into a numerical vector format, where each vector is an array that encapsulates the text's semantic essence. This numerical representation enables the execution of mathematical operations, facilitating the identification of texts with closely related meanings. Such capabilities are foundational to advanced natural language search functions, and crucial in context retrieval tasks. In these tasks, large language models (LLMs) leverage the provided data vectors to generate responses that accurately align with the query's intent.
 
-![未命名绘图.drawio.png](Components%201bc2f531b75148a18920c5d26f60d855/%25E6%259C%25AA%25E5%2591%25BD%25E5%2590%258D%25E7%25BB%2598%25E5%259B%25BE.drawio.png)
+![Embedding Model](docs/img/Embedding Model.drawio.png)
 
 The `EncoderBase` class is designed for interface with text embedding models. There are many different embedding model providers (OpenAI, Hugging Face, etc) and local models, and this class is designed to provide a base interface for all of them.
 

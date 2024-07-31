@@ -1,12 +1,12 @@
 site_name: Project 0
 # site_url: https://mydocs.org/landing-page
 
-# nav: # Navigation Headers
-#   - Home: "index.md"
-#   - Conceptual Guide:
-#       - Architecture: "docs/Conceptual Guide/Conceptual Guide.md"
-#       - Components: "docs/Conceptual Guide/Components.md"
-#   - API: "API Reference.md"
+nav: # Navigation Headers
+  - Home: "index.md"
+  - "Conceptual Guide":
+      - "Architecture": "docs/Conceptual Guide/Conceptual Guide.md"
+      - "Components": "docs/Conceptual Guide/Components.md"
+  - API: "API Reference.md"
 
 theme:
   name: material # theme docs: https://squidfunk.github.io/mkdocs-material/

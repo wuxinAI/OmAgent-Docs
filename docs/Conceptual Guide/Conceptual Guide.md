@@ -1,29 +1,5 @@
 # Conceptual Guide
 
----
-
-<aside>
-📔  **TABLE OF CONTENTS**
-
-- [Architecture](https://www.notion.so/Conceptual-Guide-86fe1a534e114c928acaec82c2a2e5c1?pvs=21)
-    - [High-Level Overview](https://www.notion.so/Architecture-292076c23e564f20afa16ee777cfbe1d?pvs=21)
-    - [Components and Modules](https://www.notion.so/Architecture-292076c23e564f20afa16ee777cfbe1d?pvs=21)
-        - [User Management](https://www.notion.so/Architecture-292076c23e564f20afa16ee777cfbe1d?pvs=21)
-        - [Content Management](https://www.notion.so/Architecture-292076c23e564f20afa16ee777cfbe1d?pvs=21)
-        - [Collaboration](https://www.notion.so/Architecture-292076c23e564f20afa16ee777cfbe1d?pvs=21)
-        - [Notifications](https://www.notion.so/Architecture-292076c23e564f20afa16ee777cfbe1d?pvs=21)
-        - [Integration](https://www.notion.so/Architecture-292076c23e564f20afa16ee777cfbe1d?pvs=21)
-    - [Data Flow Diagram](https://www.notion.so/Architecture-292076c23e564f20afa16ee777cfbe1d?pvs=21)
-- [Components](https://www.notion.so/Components-1bc2f531b75148a18920c5d26f60d855?pvs=21)
-    - [Configuration Options](https://www.notion.so/Components-1bc2f531b75148a18920c5d26f60d855?pvs=21)
-        - [Environment Variables](https://www.notion.so/Components-1bc2f531b75148a18920c5d26f60d855?pvs=21)
-        - [Application Settings](https://www.notion.so/Components-1bc2f531b75148a18920c5d26f60d855?pvs=21)
-        - [Integration Settings](https://www.notion.so/Components-1bc2f531b75148a18920c5d26f60d855?pvs=21)
-    - [Database Configuration](https://www.notion.so/Components-1bc2f531b75148a18920c5d26f60d855?pvs=21)
-    - [API Keys](https://www.notion.so/Components-1bc2f531b75148a18920c5d26f60d855?pvs=21)
-    - [Configuration Best Practices](https://www.notion.so/Components-1bc2f531b75148a18920c5d26f60d855?pvs=21)
-</aside>
-
 > Explain the underlying concepts and design principles behind OmAgent, and using OmAgent's features for tasks like video understanding and high-accuracy question answering.
 > 
 
@@ -45,4 +21,4 @@ Here we define the base information the task needs, for your custom task, you ma
 
 ### Explore More Sections
 
-[Components](https://www.notion.so/Components-1bc2f531b75148a18920c5d26f60d855?pvs=21)
+Components
