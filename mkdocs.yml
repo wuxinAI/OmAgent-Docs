@@ -2,10 +2,10 @@ site_name: Project 0
 # site_url: https://mydocs.org/landing-page
 
 nav: # Navigation Headers
-  - Home: "index.md"
-  - "Conceptual Guide":
-      - "Architecture": "docs/Conceptual Guide/Conceptual Guide.md"
-      - "Components": "docs/Conceptual Guide/Components.md"
+  - Home: index.md
+  - Conceptual Guide:
+      - Architecture: Conceptual Guide.md
+      - Components: Components.md
   - API: "API Reference.md"
 
 theme:
