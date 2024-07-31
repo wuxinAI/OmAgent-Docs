@@ -1,0 +1,1023 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Conceptual%20Guide/">
+      
+      
+        <link rel="next" href="../API%20Reference/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.30">
+    
+    
+      
+        <title>Components - Project 0</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3cba04c6.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#components" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Project 0" class="md-header__button md-logo" aria-label="Project 0" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Project 0
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Components
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/om-ai-lab/OmAgent" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    om-ai-lab/OmAgent
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../Conceptual%20Guide/" class="md-tabs__link">
+          
+  
+  Conceptual Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../API%20Reference/" class="md-tabs__link">
+        
+  
+    
+  
+  API
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Project 0" class="md-nav__button md-logo" aria-label="Project 0" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Project 0
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/om-ai-lab/OmAgent" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    om-ai-lab/OmAgent
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Conceptual Guide
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Conceptual Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Conceptual%20Guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Architecture
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Components
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Components
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#encoder-omagent-corecoreencoder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Encoder omagent-core.core.encoder
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chat-modelsomagent-corecorellm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chat modelsomagent-core.core.llm
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nodeomagent-corecorenode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nodeomagent-core.core.node
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nodeomagent-core.core.node">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#base" class="md-nav__link">
+    <span class="md-ellipsis">
+      Base
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dnc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dnc
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#misc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Misc
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prompt-templatesomagent-corecoreprompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prompt templatesomagent-core.core.prompt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tool-systemomagent-corecoretool_system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tool systemomagent-core.core.tool_system
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#handlersomagent-corehandlers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Handlersomagent-core.handlers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Handlersomagent-core.handlers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#callback_handler" class="md-nav__link">
+    <span class="md-ellipsis">
+      Callback_handler
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data_handler" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data_handler
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error_handler" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error_handler
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log_handler" class="md-nav__link">
+    <span class="md-ellipsis">
+      Log_handler
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schemasomagent-coreschemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schemasomagent-core.schemas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utilsomagent-coreutils" class="md-nav__link">
+    <span class="md-ellipsis">
+      Utilsomagent-core.utils
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../API%20Reference/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#encoder-omagent-corecoreencoder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Encoder omagent-core.core.encoder
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chat-modelsomagent-corecorellm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chat modelsomagent-core.core.llm
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nodeomagent-corecorenode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nodeomagent-core.core.node
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nodeomagent-core.core.node">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#base" class="md-nav__link">
+    <span class="md-ellipsis">
+      Base
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dnc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dnc
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#misc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Misc
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prompt-templatesomagent-corecoreprompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prompt templatesomagent-core.core.prompt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tool-systemomagent-corecoretool_system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tool systemomagent-core.core.tool_system
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#handlersomagent-corehandlers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Handlersomagent-core.handlers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Handlersomagent-core.handlers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#callback_handler" class="md-nav__link">
+    <span class="md-ellipsis">
+      Callback_handler
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data_handler" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data_handler
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error_handler" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error_handler
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log_handler" class="md-nav__link">
+    <span class="md-ellipsis">
+      Log_handler
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schemasomagent-coreschemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schemasomagent-core.schemas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utilsomagent-coreutils" class="md-nav__link">
+    <span class="md-ellipsis">
+      Utilsomagent-core.utils
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="components">Components</h1>
+<blockquote>
+<p><strong>Version</strong>: [0.0.2]
+<strong>Date</strong>: [2024/7/31]</p>
+</blockquote>
+<hr />
+<p>OmAgent offers standard, extendable interfaces and external integrations for building with LLMs. It implements some components, relies on third-party integrations for others, and uses a mix for the rest.</p>
+<hr />
+<h2 id="encoder-omagent-corecoreencoder">Encoder <code>omagent-core.core.encoder</code></h2>
+<p>Embedding models can transform text into a numerical vector format, where each vector is an array that encapsulates the text's semantic essence. This numerical representation enables the execution of mathematical operations, facilitating the identification of texts with closely related meanings. Such capabilities are foundational to advanced natural language search functions, and crucial in context retrieval tasks. In these tasks, large language models (LLMs) leverage the provided data vectors to generate responses that accurately align with the query's intent.</p>
+<p><a class="glightbox" href="docs/img/Embedding Model.drawio.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Embedding Model" src="docs/img/Embedding Model.drawio.png" /></a></p>
+<p>The <code>EncoderBase</code> class is designed for interface with text embedding models. There are many different embedding model providers (OpenAI, Hugging Face, etc) and local models, and this class is designed to provide a base interface for all of them.</p>
+<hr />
+<h2 id="chat-modelsomagent-corecorellm">Chat models<code>omagent-core.core.llm</code></h2>
+<p>We define a class <code>BaseLLM</code> that inherits from <code>BotBase</code> and <code>ABC</code> (Abstract Base Class). This class is designed to interact with a Language Learning Model (LLM). It includes mechanisms for caching responses to reduce the need to call the underlying model for the same inputs repeatedly. </p>
+<p>We have some standardized parameters when constructing ChatModels based on <code>BaseLLM</code>:</p>
+<ul>
+<li><code>model_id</code>: the id of the model</li>
+<li><code>temperature</code>: the sampling temperature</li>
+<li><code>vision</code>: model vision ability</li>
+<li><code>max_tokens</code>: max tokens to generate</li>
+<li><code>stop</code>: default stop sequences</li>
+<li><code>response_format</code>: format of response</li>
+<li><code>api_key</code>: API key for the model provider</li>
+<li><code>base_url</code>: endpoint to send requests to</li>
+<li><code>use_default_sys_prompt</code> : use default sys_prompt or not</li>
+</ul>
+<p>Some important things to note:
+﻿
+standard parameters only apply to model providers that expose parameters with the intended functionality. For example, some providers do not expose a configuration for vision ability, so <code>vision</code> can't be supported on these. So  when  interfacing with different models, you should pay more attention to it.</p>
+<p>ChatModels also accept other parameters that are specific to that integration. To find all the parameters supported by a ChatModel head to the API reference for that model. </p>
+<hr />
+<h2 id="nodeomagent-corecorenode">Node<code>omagent-core.core.node</code></h2>
+<h3 id="base">Base</h3>
+<p>The <code>Node</code> class is an abstract base class that represents the minimal processing unit in a pipeline. All nodes in a pipeline should share the same interface. This class inherits from <code>BotBase</code> and <code>ABC</code> (Abstract Base Class). And it has both synchronous and asynchronous execution paths.</p>
+<p>And <code>Basedecider</code> and <code>Baseprocessor</code> are both defined that based on the <code>Node</code> class, aiming to process data in a pipeline. And the purpose of them are moving data from one processing step to the next according to the defined sequence. OmAgent also defined a loop class to implement the processing loop capacity.</p>
+<h3 id="dnc">Dnc</h3>
+<p>Here comes our specific design about the task schedule, in which we use the divide and conqueror(dnc) theory. We have <code>TaskDivider</code> and <code>TaskConqueror</code>  to divide complex multimodal tasks and then execute them and finally conqueror the results, the process are implement by LLMs, LLM will decide how to divide and when to conqueror the final answers.</p>
+<h3 id="misc">Misc</h3>
+<p>Here OmAgent define a class <code>TaskRescue</code>, inherits from <code>BaseLLMBackend</code> and <code>BaseDecider</code> , this class is responsible for rescuing tasks that have failed through using a large language model to generate new prompts and executing tool tasks.</p>
+<p>Here is the detail of tool call:</p>
+<pre><code class="language-python">toolcall_rescue_output_structure = {
+                    &quot;tool_status&quot;: rescue_execution_status,
+                    &quot;tool_result&quot;: rescue_execution_results,
+                }
+                self.callback.send_block(
+                    f'{Fore.WHITE}\n{&quot;-=&quot; * 5}Tool Call {Fore.RED}Rescue{Style.RESET_ALL} Output{&quot;=-&quot; * 5}{Style.RESET_ALL}\n'
+                    f&quot;{Fore.BLUE}{json.dumps(toolcall_rescue_output_structure, indent=2, ensure_ascii=False)}{Style.RESET_ALL}&quot;
+                )
+</code></pre>
+<hr />
+<h2 id="prompt-templatesomagent-corecoreprompt">Prompt templates<code>omagent-core.core.prompt</code></h2>
+<p>Prompt templates convert user inputs and parameters into instructions for a language model, ensuring it generates relevant and coherent responses by understanding the context. </p>
+<p>Prompt templates use a dictionary where each key corresponds to a variable in the template to be filled as input.</p>
+<p>Prompt templates generate a Prompt, which can be utilized by a Language Model (LLM) or a ChatModel. This Prompt is designed for flexibility, allowing it to be converted into either a string or a list of messages. The purpose behind the creation of Prompt is to simplify the transition between string formats and message lists.</p>
+<p>There are a few different methods to create prompt from prompt templates:</p>
+<p><strong>From example</strong></p>
+<p>The <code>from_examples</code> method constructs a prompt from a list of examples, a suffix, and input variables, allowing for dynamic prompt creation. </p>
+<pre><code class="language-python">def from_examples(
+        cls,
+        examples: List[str],
+        suffix: str,
+        input_variables: List[str],
+        example_separator: str = &quot;\n\n&quot;,
+        prefix: str = &quot;&quot;,
+        **kwargs: Any,
+    ) -&gt; PromptTemplate:
+          &quot;&quot;&quot;Take examples in list format with prefix and suffix to create a prompt.&quot;&quot;&quot;
+
+</code></pre>
+<p><strong>From file</strong></p>
+<p>The <code>from_file</code> method loads a prompt template from a file.</p>
+<pre><code class="language-python">def from_file(
+        cls, template_file: Union[str, Path], **kwargs: Any
+    ) -&gt; PromptTemplate:
+        &quot;&quot;&quot;Load a prompt from a file.&quot;&quot;&quot;
+</code></pre>
+<p><strong>From template</strong></p>
+<p>The <code>from_template</code> method creates a prompt template directly from a template string, determining the input variables based on the template format. </p>
+<pre><code class="language-python">def from_template(
+        cls, template: str, template_format: str = &quot;jinja2&quot;, **kwargs: Any
+    ) -&gt; PromptTemplate:
+        &quot;&quot;&quot;Load a prompt template from a template.&quot;&quot;&quot;
+</code></pre>
+<p><strong>From config</strong></p>
+<p>The <code>from_config</code> method loads a prompt template from a configuration dictionary, extracting the template and other parameters from the config.</p>
+<pre><code class="language-python">def from_config(cls, config: Dict) -&gt; PromptTemplate:
+        &quot;&quot;&quot;Load a prompt template from a config.&quot;&quot;&quot;
+</code></pre>
+<hr />
+<h2 id="tool-systemomagent-corecoretool_system">Tool system<code>omagent-core.core.tool_system</code></h2>
+<p>Tools are utilities intended to be invoked by a model: their inputs are crafted to be generated by models, and their outputs are meant to be returned to models. Tools are necessary when you want a model to manage parts of your code or interact with external APIs.</p>
+<p>A tool consists of:</p>
+<ol>
+<li>The name of the tool.</li>
+<li>A description of what the tool does.</li>
+<li>A function (and, also an async function to implement or pass it)</li>
+<li>A optional type schema defining the inputs to tool.</li>
+</ol>
+<p>When a tool is linked to a model, the name, description, and args schema are given as context to the model. With a list of tools and a set of instructions, a model can request to invoke one or more tools with specific inputs. A typical usage scenario might look like this:</p>
+<pre><code class="language-python"> #create a json file under the path: /workflows/your task, tools'info should also be defined in this json file
+{     
+    &quot;llm&quot;: &quot;...&quot;,
+    &quot;tools&quot;: [...]
+}
+
+#in run.py
+def run_agent(task):
+    ...
+    bot_builder = Builder.from_file(&quot;workflows/your task&quot;)  #change this path
+    ...
+    return input.last_output
+if __name__ == &quot;__main__&quot;:
+    run_agent(&quot;your query&quot;) #enter your query
+</code></pre>
+<p>We define a class<code>BaseTool</code> here, it has  <code>_run</code> method,  <code>_arun</code> method, <code>run</code> method, <code>arun</code> method and <code>generate_schema</code> method. </p>
+<p>The <code>_run</code> method is a private method that executes the function stored in <code>func</code> with the provided input arguments, the <code>_arun</code> method is an asynchronous version of <code>_run</code>.</p>
+<p>The <code>run</code> method is a public method that first checks if <code>args_schema</code> is defined.After validation, it calls the <code>_run</code> method with the input arguments and any special parameters, similarly, the <code>arun</code> method is the asynchronous counterpart to <code>run</code>.</p>
+<p>The <code>generate_schema</code> method generates a schema for the tool's input parameters. If <code>args_schema</code> is not defined, it returns a basic schema with a description and a single required input parameter. If <code>args_schema</code> is defined, it uses the <code>generate_schema</code> method of <code>ArgSchema</code> to create a detailed schema with properties and required fields.</p>
+<hr />
+<h2 id="handlersomagent-corehandlers">Handlers<code>omagent-core.handlers</code></h2>
+<p>OmAgent provides different handle systems for callbacks, data, error and logs that allows you to hook into the various stages of your LLM application. This is useful for logging, monitoring and callbacks.</p>
+<h3 id="callback_handler">Callback_handler</h3>
+<p>The <code>callback_handler</code> includes <code>Testcallback</code> and <code>Defaultcallback</code> based on <code>basecallback</code>. The <code>Testcallback</code> is a simple implementation for testing purposes. And <code>Defaultcallback</code> is a more complex implementation that logs messages, handles errors, and organizes logs in a dict structure.</p>
+<p>To use these classes, you would create an instance of <code>DefaultCallback</code> or <code>TestCallback</code> and call the methods as needed. For example:</p>
+<pre><code class="language-python">callback = DefaultCallback(bot_id=&quot;123&quot;, endpoint=&quot;http://example.com&quot;)
+callback.info(&quot;This is an info message&quot;)
+callback.error(VQLError(&quot;This is an error message&quot;))
+callback.send_block({&quot;key&quot;: &quot;value&quot;})
+callback.finish()
+</code></pre>
+<h3 id="data_handler">Data_handler</h3>
+<p>The data_handler has several class for interfacing to different kinds of databases: <code>milvushandler</code>, <code>sql_data_handler</code>, <code>video_handler</code> .</p>
+<p>The <code>milvushandler</code> is for interacting with the Milvus database. Milvus is an open-source vector database specifically designed for handling large-scale vector data.</p>
+<p>And the <code>sql_data_handler</code> is similar, as for <code>video_handler</code> ,it’s based on the <code>milvushandler</code> to store the vectors from video information. </p>
+<h3 id="error_handler">Error_handler</h3>
+<p>We defined a custom exception class named <code>VQLError</code> here. This custom exception is designed to handle various error scenarios with specific error codes and messages.</p>
+<pre><code class="language-python">- 500: &quot;Internal Error&quot;,
+- 501: &quot;Image Error: Unable to Read&quot;,
+- 502: &quot;Image Error: Corrupted Image&quot;,
+- 503: &quot;Image Error: Unable to Retrieve&quot;,
+- 504: &quot;Image Error: Unrecognizable&quot;,
+- 505: &quot;Image Error: Nonexistent Key&quot;,
+- 506: &quot;Image Error: Unable to Connect to Database&quot;,
+- 511: &quot;Request Error: Service Processing Failed&quot;,
+- 515: &quot;Request Error: Exceeded Retry Limit, Unable to Access Address&quot;,
+- 516: &quot;Request Error: Nonexistent Address&quot;,
+- 517: &quot;Request Error: Incorrect Request Format&quot;,
+- 518: &quot;Request Error: Illegal Request Address&quot;,
+- 550: &quot;IBase Error&quot;,
+- 570: &quot;Callback Error: Result Callback Failed&quot;
+</code></pre>
+<h3 id="log_handler">Log_handler</h3>
+<p>We define a custom logging class <code>Logger</code> that extends Python's built-in <code>_logging.Logger</code> class. This custom logger allows for enhanced logging with caller information and supports both console and file logging with rotation.</p>
+<hr />
+<h2 id="schemasomagent-coreschemas">Schemas<code>omagent-core.schemas</code></h2>
+<p>OmAgent defined its specific schemas here, including <code>STM</code>, <code>BaseInterface</code> and <code>BaseTable</code> inherited from <code>BaseModel</code> and <code>SQLModel</code> :</p>
+<ul>
+<li><code>STM</code> class: This class has five attributes: <code>tasks</code>, <code>memory</code>, <code>knowledge</code>, <code>summary</code> and <code>kwargs</code> in dict type for passing information between nodes.</li>
+<li><code>BaseInterface</code> class: This class has two attributes:  <code>last_output</code> and <code>kwargs</code> . <code>last_output</code> represent the result that the node processed.</li>
+<li><code>BaseTable</code> class: This class inherits from <code>SQLModel</code> , is used for database table representation.</li>
+</ul>
+<p>And we also define a <code>Message</code> class here to process the <code>content</code> attribute of a <code>Message</code> object, which can contain both text and image placeholders.
+The class can replace image placeholders with actual image URLs from a provided image cache, which is useful for handling messages that include dynamic image content.</p>
+<hr />
+<h2 id="utilsomagent-coreutils">Utils<code>omagent-core.utils</code></h2>
+<p>OmAgent first defines a class called <code>Builder</code> here, it can be used to init and run the bot system and provide methods to create instances from file or dict. It can also visualize the loop nodes we defined in <code>Baseloop</code> before. Apart from that, there are also LRUcache class for temp storage, HTTP request function and a <code>Registry</code> class to support multitype modules and dynamically importing modules.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.path", "navigation.top", "search.highlight"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
