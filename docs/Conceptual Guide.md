@@ -1,7 +1,6 @@
 # Conceptual Guide
 
 > Explain the underlying concepts and design principles behind OmAgent, and using OmAgent's features for tasks like video understanding and high-accuracy question answering.
-> 
 
 # Architecture
 
